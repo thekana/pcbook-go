@@ -10,7 +10,6 @@ func ProtobufToJSON(message proto.Message) (string, error) {
 	marshaler := jsonpb.Marshaler{
 		EnumsAsInts:  false,
 		EmitDefaults: true,
-		Indent:       "  ",
 		OrigName:     true,
 	}
 
